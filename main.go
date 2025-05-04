@@ -26,14 +26,17 @@ func main() {
 
 	commands.register("login", handlerLogin)
 
-	a := os.Args
-
-	if len(a) < 2 {
-		log.Fatal("insufficient arguments")
+	if len(os.Args) < 2 {
+		log.Fatal("Usage: cli <command> [args...]")
+		return
 	}
+
+	cmdName := os.Args[1]
+	cmdArgs := os.Args[2:]
+
 	cmd := command{
-		Name: "login",
-		Args: a[2:],
+		Name: cmdName,
+		Args: cmdArgs,
 	}
 	if err := commands.run(programState, cmd); err != nil {
 		log.Fatal(err)
