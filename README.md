@@ -4,3 +4,16 @@ It's a CLI tool that allows users to:
 - Store the collected posts in a PostgreSQL database
 - Follow and unfollow RSS feeds that other users have added
 - View summaries of the aggregated posts in the terminal, with a link to the full post
+
+# Commands
+
+### Register
+`gator register [name]`
+
+Register a new user in the database and add it to the `~/.gatorconfig.json` file.
+
+### Login 
+
+`gator login [name]`
+
+Set the user (if exists) in the config file.
