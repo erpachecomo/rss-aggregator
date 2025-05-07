@@ -23,3 +23,9 @@ Set the user (if exists) in the config file.
 `gator reset`
 
 Delete all users on the database.
+
+### Get all users
+
+`gator users`
+
+Get all users on the database.
