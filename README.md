@@ -17,3 +17,9 @@ Register a new user in the database and add it to the `~/.gatorconfig.json` file
 `gator login [name]`
 
 Set the user (if exists) in the config file.
+
+### Reset
+
+`gator reset`
+
+Delete all users on the database.
