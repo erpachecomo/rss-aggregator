@@ -29,3 +29,10 @@ Delete all users on the database.
 `gator users`
 
 Get all users on the database.
+
+### Get feed
+
+`gator agg`
+
+[WIP] Currently displaying a mock from https://www.wagslane.dev/index.xml
+Get feed.
